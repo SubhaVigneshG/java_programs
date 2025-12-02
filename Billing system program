@@ -1,0 +1,90 @@
+import java.util.Scanner;
+
+public class inp {
+
+
+    public static void main(String[] args) {
+
+        Scanner inp = new Scanner(System.in);
+
+        System.out.println("lalalalala Gro");
+
+        for (int i=0; i<50; i++){
+            System.out.println("cat:::");
+
+            System.out.println("1. Dairy \n2. Snacks \n3. Drinks \n 4.Break");
+
+            int catinp = inp.nextInt();
+
+            if(catinp == 1){
+                System.out.println("1. Milk \n2. Curd \n3. paneer \n 4. break");
+
+                int dinp = inp.nextInt();
+
+                if(dinp == 1){
+                    System.out.println("1. 250ml - 12Rs \n2. 500ml - 30Rs \n 3. 1L - 60Rs");
+
+                    int mlinp = inp.nextInt();
+
+                    if( mlinp == 1){
+                        System.out.println("price is 12Rs \n1. Cash \n2.Online");
+
+                        System.out.println("Thank You!");
+                    }
+
+                }
+
+                else if(dinp ==4){
+                    break;
+                }
+            }
+
+            else if(catinp == 4){
+                break;
+            }
+
+            else if (catinp == 2){
+                System.out.println("1. Chips \n2. Bis \n3. choco");
+
+                int dinp = inp.nextInt();
+
+                if(dinp == 1){
+                    System.out.println("1. Las  \n2. Bingo \n 3. pota");
+
+                    System.out.println("which chips u need");
+                    int chipsinp = inp.nextInt();
+
+                    if( chipsinp == 1){
+                        System.out.println("1. 5Rs\n 2. 10Rs \n3.20RS \n 4.50Rs");
+
+                        int chipsprinp = inp.nextInt();
+
+                        System.out.println("how many::");
+                        int chipsq = inp.nextInt();
+
+                        if (chipsprinp == 1){
+                            int pr = 5;
+                            System.out.println("Total price for chips alone" + pr*chipsq );
+                        }
+                        else if (chipsprinp == 2){
+                            int pr = 10;
+                            System.out.println("Total price for chips alone" + pr*chipsq );
+                        }
+                        else if (chipsprinp == 3){
+                            int pr = 20;
+                            System.out.println("Total price for chips alone" + pr*chipsq );
+                        }
+                        else if (chipsprinp == 4){
+                            int pr = 50;
+                            System.out.println("Total price for chips alone" + pr*chipsq );
+                        }
+
+                    }
+
+                }
+            }
+        }
+
+    }
+}
+
